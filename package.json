@@ -1,15 +1,14 @@
 {
-  "name": "react",
+  "name": "build-burger",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "",
+  "keywords": [],
+  "author": "Yash Srivastava",
   "main": "src/index.js",
   "dependencies": {
     "@babel/runtime": "7.13.8",
     "axios": "0.21.1",
+    "prop-types": "15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-scripts": "4.0.0"

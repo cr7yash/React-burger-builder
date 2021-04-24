@@ -1,22 +1,5 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  align-items: center;
-}
-
 body {
-  background: hsla(210, 20%, 90%, 1);
-  padding: 2em 0;
-  line-height: 1.6;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-}
-
-.cards {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
 }
