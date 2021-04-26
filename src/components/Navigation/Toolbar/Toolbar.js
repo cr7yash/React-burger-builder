@@ -1,13 +1,15 @@
 import React from "react";
 import Logo from "../../Logo/Logo";
 import NavigationItems from "../NavigationItems/NavigationItems";
-import "./Toolbar.css";
+import classes from "./Toolbar.module.css";
 
 export default function Toolbar(props) {
   return (
-    <header className="Toolbar">
+    <header className={classes.Toolbar}>
       <div>MENU</div>
-      <Logo />
+      <div className={classes.Logo}>
+        <Logo />
+      </div>
       <nav>
         <NavigationItems />
       </nav>
