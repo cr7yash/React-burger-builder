@@ -1,3 +1,4 @@
+import axios from "../../axios-orders";
 import React, { Component } from "react";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import Burger from "../../components/Burger/Burger";
@@ -94,7 +95,24 @@ class BurgerBuilder extends Component {
   };
 
   purchaseContinueHandler = () => {
-    alert("you are continuing!");
+    const order = {
+      ingredients: this.state.ingredients,
+      price: this.state.totalPrice,
+      customer: {
+        name: "Max Schwarzmüller",
+        address: {
+          street: "Teststreet 1",
+          zipCode: "41351",
+          country: "Germany"
+        },
+        email: "test@test.com"
+      },
+      deliveryMethod: "fastest"
+    };
+    axios
+      .post("/orders.json", order)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
   render() {
     // To check for whether button should be diabled or not
