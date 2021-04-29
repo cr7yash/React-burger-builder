@@ -14,9 +14,6 @@ const INGREDIENT_PRICES = {
 };
 
 class BurgerBuilder extends Component {
-  constructor() {
-    super();
-  }
   state = {
     ingredients: {
       salad: 0,
