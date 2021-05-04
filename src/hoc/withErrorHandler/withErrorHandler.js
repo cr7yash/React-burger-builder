@@ -4,9 +4,12 @@ import Aux from "../Aux";
 
 const withErrorHandler = (WrappedComponent, axios) => {
   return class extends React.Component {
-    state = {
-      error: null
-    };
+    constructor() {
+      super();
+      this.state = {
+        error: null
+      };
+    }
     componentDidMount() {
       axios.interceptors.request.use((req) => {
         this.setState({ error: null });
